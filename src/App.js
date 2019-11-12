@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ContactData from './component/lifecycle/ContactData';
+import MessageData from './component/lifecycle/MessageData';
+import ContactDataHOC from './component/higherOrder/ContactDataHOC';
+import MessageDataHOC from './component/higherOrder/MessageDataHOC';
+import ContactDataWithHooks from './component/future/ContactDataWithHooks';
+import MessageDataWithHooks from './component/future/MessageDataWithHooks';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section>
+        <h1>Legacy Class Lifecycle</h1>
+        <ContactData />
+        <MessageData />
+      </section>
+      <section>
+        <h1>Higher Order Component</h1>
+        <ContactDataHOC />
+        <MessageDataHOC />
+      </section>
+      <section>
+        <h1>Hooks</h1>
+        <ContactDataWithHooks />
+        <MessageDataWithHooks />
+      </section>
     </div>
   );
 }
