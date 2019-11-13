@@ -20,3 +20,10 @@
 .App-link {
   color: #09d3ac;
 }
+.flexbox {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%; */
+}

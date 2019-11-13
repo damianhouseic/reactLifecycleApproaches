@@ -5,7 +5,7 @@ import { Api } from '../../api/data';
 export const MessageData = props => {
     return (
         <div>
-            <h3>Message Data</h3>
+            <h5>Message Data</h5>
             <MessageWithData />
             <MessageWithData />
             <MessageWithOtherData />

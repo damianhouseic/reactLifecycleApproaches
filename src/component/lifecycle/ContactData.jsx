@@ -5,7 +5,7 @@ export default class ContactData extends Component {
     render() {
         return (
             <div>
-                <h3>Contact Data</h3>
+                <h5>Contact Data</h5>
                 <Contact />
                 <Contact />
                 <Contact />

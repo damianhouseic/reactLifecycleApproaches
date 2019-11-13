@@ -1,31 +1,68 @@
-import React from 'react';
-import './App.css';
-import ContactData from './component/lifecycle/ContactData';
-import MessageData from './component/lifecycle/MessageData';
-import ContactDataHOC from './component/higherOrder/ContactDataHOC';
-import MessageDataHOC from './component/higherOrder/MessageDataHOC';
-import ContactDataWithHooks from './component/future/ContactDataWithHooks';
-import MessageDataWithHooks from './component/future/MessageDataWithHooks';
-
+import React from "react";
+import "./App.css";
+import ContactData from "./component/lifecycle/ContactData";
+import MessageData from "./component/lifecycle/MessageData";
+import ContactDataHOC from "./component/higherOrder/ContactDataHOC";
+import MessageDataHOC from "./component/higherOrder/MessageDataHOC";
+import ContactDataWithHooks from "./component/future/ContactDataWithHooks";
+import MessageDataWithHooks from "./component/future/MessageDataWithHooks";
+import { Card, Row, Col } from "react-materialize";
 
 function App() {
   return (
     <div className="App">
-      <section>
-        <h1>Legacy Class Lifecycle</h1>
-        <ContactData />
-        <MessageData />
-      </section>
-      <section>
-        <h1>Higher Order Component</h1>
-        <ContactDataHOC />
-        <MessageDataHOC />
-      </section>
-      <section>
-        <h1>Hooks</h1>
-        <ContactDataWithHooks />
-        <MessageDataWithHooks />
-      </section>
+      <div className="flexbox">
+        <Row>
+          <Col l={4} m={6} s={12}>
+            <Card
+              className="blue lighten-3"
+              textClassName="white-text"
+              title="Legacy Class Lifecycle"
+            >
+              <Row>
+                <Col l={6} className="center-align" className="center-align">
+                  <ContactData />
+                </Col>
+                <Col l={6} className="center-align">
+                  <MessageData />
+                </Col>
+              </Row>
+            </Card>
+          </Col>
+          <Col l={4} m={6} s={12}>
+            <Card
+              className="blue lighten-3"
+              textClassName="white-text"
+              title="Higher Order Component"
+            >
+              <Row>
+                <Col l={6} className="center-align">
+                  <ContactDataHOC />
+                </Col>
+                <Col l={6} className="center-align">
+                  <MessageDataHOC />
+                </Col>
+              </Row>
+            </Card>
+          </Col>
+          <Col l={4} m={6} s={12}>
+            <Card
+              className="blue lighten-3"
+              textClassName="white-text"
+              title="Hooks"
+            >
+              <Row>
+                <Col l={6} className="center-align">
+                  <ContactDataWithHooks />
+                </Col>
+                <Col l={6} className="center-align">
+                  <MessageDataWithHooks />
+                </Col>
+              </Row>
+            </Card>
+          </Col>
+        </Row>
+      </div>
     </div>
   );
 }

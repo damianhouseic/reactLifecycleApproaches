@@ -5,13 +5,12 @@ import { useData } from './hooks/useData';
 export const MessageData = props => {
     return (
         <div>
-            <h3>Message Data</h3>
+            <h5>Message Data</h5>
             <Message requestFunction={Api.getMessage}/>
             <Message requestFunction={Api.getOtherMessage}/>
             <Message requestFunction={Api.getMessage}/>
             <Message requestFunction={Api.getOtherMessage}/>
             <Message requestFunction={Api.getMessage}/>
-            <Message requestFunction={Api.getOtherMessage}/>
         </div>
     );
 };

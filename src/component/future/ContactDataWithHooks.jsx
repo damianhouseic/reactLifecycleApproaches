@@ -5,13 +5,12 @@ import { useData } from './hooks/useData';
 export const ContactData = props => {
     return (
         <div>
-            <h3>Contact Data</h3>
+            <h5>Contact Data</h5>
             <Contact requestFunction={Api.getContact}/>
             <Contact requestFunction={Api.getOtherContact}/>
             <Contact requestFunction={Api.getContact}/>
             <Contact requestFunction={Api.getOtherContact}/>
             <Contact requestFunction={Api.getContact}/>
-            <Contact requestFunction={Api.getOtherContact}/>
         </div>
     );
 };

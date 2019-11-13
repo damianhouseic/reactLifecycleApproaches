@@ -5,7 +5,7 @@ import { Api } from '../../api/data';
 export const ContactData = props => {
     return (
         <div>
-            <h3>Contact Data</h3>
+            <h5>Contact Data</h5>
             <ContactWithData />
             <ContactWithData />
             <ContactWithData />

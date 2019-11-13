@@ -5,7 +5,7 @@ export default class MessageData extends Component {
     render() {
         return (
             <div>
-                <h3>Message Data</h3>
+                <h5>Message Data</h5>
                 <Message />
                 <Message />
                 <Message />
