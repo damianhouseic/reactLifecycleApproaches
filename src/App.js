@@ -11,16 +11,16 @@ import { Card, Row, Col } from "react-materialize";
 function App() {
   return (
     <div className="App">
-      <div className="flexbox">
+      <div>
         <Row>
           <Col l={4} m={6} s={12}>
             <Card
-              className="blue lighten-3"
-              textClassName="white-text"
+              className="blue-grey lighten-5"
+              textClassName="black-text"
               title="Legacy Class Lifecycle"
             >
               <Row>
-                <Col l={6} className="center-align" className="center-align">
+                <Col l={6} className="center-align">
                   <ContactData />
                 </Col>
                 <Col l={6} className="center-align">
@@ -31,8 +31,8 @@ function App() {
           </Col>
           <Col l={4} m={6} s={12}>
             <Card
-              className="blue lighten-3"
-              textClassName="white-text"
+              className="blue-grey lighten-5"
+              textClassName="black-text"
               title="Higher Order Component"
             >
               <Row>
@@ -47,8 +47,8 @@ function App() {
           </Col>
           <Col l={4} m={6} s={12}>
             <Card
-              className="blue lighten-3"
-              textClassName="white-text"
+              className="blue-grey lighten-5"
+              textClassName="black-text"
               title="Hooks"
             >
               <Row>
