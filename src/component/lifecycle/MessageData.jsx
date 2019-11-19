@@ -23,13 +23,13 @@ export class Message extends Component {
             subject: '',
             recipients: 0,
             loading: true
-        }
+        };
     }
 
     componentDidMount() {
-        this.setState({loading: true});
-        Api.getMessage().then(({ subject, recipients}) => this.setState({subject, recipients, loading: false}));
-    }   
+        this.setState({ loading: true });
+        Api.getMessage().then(({ subject, recipients }) => this.setState({ subject, recipients, loading: false }));
+    }
 
     renderLoading() {
         return <section>Loading...</section>;

@@ -23,13 +23,13 @@ export class Contact extends Component {
             name: '',
             email: '',
             loading: true
-        }
+        };
     }
 
     componentDidMount() {
-        this.setState({loading: true});
-        Api.getContact().then(({ name, email}) => this.setState({name, email, loading: false}));
-    }   
+        this.setState({ loading: true });
+        Api.getContact().then(({ name, email }) => this.setState({ name, email, loading: false }));
+    }
 
     renderLoading() {
         return <section>Loading...</section>;

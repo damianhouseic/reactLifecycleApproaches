@@ -23,9 +23,9 @@ const Message = props => {
             <div>recipients: {recipients}</div>
         </section>
     );
-}
+};
 
-const MessageWithData = withData({requestFunction: Api.getMessage})(Message);
-const MessageWithOtherData = withData({requestFunction: Api.getOtherMessage})(Message);
+const MessageWithData = withData({ requestFunction: Api.getMessage })(Message);
+const MessageWithOtherData = withData({ requestFunction: Api.getOtherMessage })(Message);
 
 export default MessageData;

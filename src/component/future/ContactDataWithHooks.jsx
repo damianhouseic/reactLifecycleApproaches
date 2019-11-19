@@ -6,11 +6,11 @@ export const ContactData = props => {
     return (
         <div>
             <h5>Contact Data</h5>
-            <Contact requestFunction={Api.getContact}/>
-            <Contact requestFunction={Api.getOtherContact}/>
-            <Contact requestFunction={Api.getContact}/>
-            <Contact requestFunction={Api.getOtherContact}/>
-            <Contact requestFunction={Api.getContact}/>
+            <Contact requestFunction={Api.getContact} />
+            <Contact requestFunction={Api.getOtherContact} />
+            <Contact requestFunction={Api.getContact} />
+            <Contact requestFunction={Api.getOtherContact} />
+            <Contact requestFunction={Api.getContact} />
         </div>
     );
 };
@@ -27,6 +27,6 @@ const Contact = props => {
             <div>email: {email}</div>
         </section>
     );
-}
+};
 
 export default ContactData;

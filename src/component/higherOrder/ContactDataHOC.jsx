@@ -23,9 +23,9 @@ const Contact = props => {
             <div>email: {email}</div>
         </section>
     );
-}
+};
 
-const ContactWithData = withData({requestFunction: Api.getContact})(Contact);
-const ContactWithOtherData = withData({requestFunction: Api.getOtherContact})(Contact);
+const ContactWithData = withData({ requestFunction: Api.getContact })(Contact);
+const ContactWithOtherData = withData({ requestFunction: Api.getOtherContact })(Contact);
 
 export default ContactData;

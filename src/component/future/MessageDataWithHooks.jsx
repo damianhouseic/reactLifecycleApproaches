@@ -6,11 +6,11 @@ export const MessageData = props => {
     return (
         <div>
             <h5>Message Data</h5>
-            <Message requestFunction={Api.getMessage}/>
-            <Message requestFunction={Api.getOtherMessage}/>
-            <Message requestFunction={Api.getMessage}/>
-            <Message requestFunction={Api.getOtherMessage}/>
-            <Message requestFunction={Api.getMessage}/>
+            <Message requestFunction={Api.getMessage} />
+            <Message requestFunction={Api.getOtherMessage} />
+            <Message requestFunction={Api.getMessage} />
+            <Message requestFunction={Api.getOtherMessage} />
+            <Message requestFunction={Api.getMessage} />
         </div>
     );
 };
@@ -27,6 +27,6 @@ const Message = props => {
             <div>recipients: {recipients}</div>
         </section>
     );
-}
+};
 
 export default MessageData;
